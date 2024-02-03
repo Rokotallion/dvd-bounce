@@ -23,7 +23,6 @@ light.position.set(0,5, 5) .normalize();
 scene.add(light);
 
 // variables
-
 colCount = 0;
 
 const colorRandom = ["#42f587", "#4254f5", "#4254f5", "#f55742", "#d742f5"];
@@ -39,11 +38,11 @@ Rot = 0.02;
 
 if (xSpeed == -0.0025){
     Rot = 0.02;
-    console.log("left");
+    console.log("Starts at Left");
 }
 else if (xSpeed == 0.0025){
     Rot = -0.02;
-    console.log("right");
+    console.log("Starts at Right");
 }
 
 
@@ -69,7 +68,7 @@ function animate() {
         newDvdColor = dvdColor;
         dvd.material.color.set(dvdColor);
         colCount ++;
-        console.log("col = " + colCount);
+        console.log("Collision Count = " + colCount);
     }
 
     if (dvd.position.x > 0.95){
